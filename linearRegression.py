@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load your trained model
-model = pickle.load(open("model.pkl", "rb"))
+model = pickle.load(open("linear_regression_pp.pkl", "rb"))
 
 @app.route("/")
 def home():
